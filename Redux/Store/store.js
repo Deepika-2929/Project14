@@ -1,6 +1,8 @@
-import counterReducer from "../reducers/reducers";
-import { createstore } from "redux";
+import { applyMiddleware, legacy_createStore as createStore } from "redux";
+import rootReducer from "../reducers/Rootreducers";
+import { thunk } from "redux-thunk";
 
-const store = createstore(counterReducer); // Placeholder for the Redux store
+
+const store = createStore(rootReducer , applyMiddleware(thunk)); // Placeholder for the Redux store
 
 export default store;

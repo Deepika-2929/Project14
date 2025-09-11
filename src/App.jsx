@@ -98,13 +98,16 @@
 // };
 
 // export default App;
+
 import React from 'react';
 import Counter from './Components/counter/index.jsx';
+import Users from './User/index.jsx';
 
 const App = () => {
   return (
     <div>
       <Counter/>
+      <Users/>
       </div>
   );
 };
